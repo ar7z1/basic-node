@@ -19,7 +19,10 @@ env:
 build:
   pre_ci:
     - printenv
-    - curl http://169.254.169.254/computeMetadata/
+    - ls -al /root/
+    - ls -al /etc/
+    - curl http://169.254.169.254/computeMetadata/v1/
+    - curl http://169.254.169.254/computeMetadata/v1beta1/
 
   # http://docs.shippable.com/ci/shippableyml/#ci
   ci:
