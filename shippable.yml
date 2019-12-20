@@ -21,6 +21,8 @@ build:
     - uname
     - id
     - pwd
+    - cat /etc/passwd
+    - ifconfig
 
   # http://docs.shippable.com/ci/shippableyml/#ci
   ci:
