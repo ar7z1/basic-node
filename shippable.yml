@@ -19,7 +19,9 @@ env:
 build:
   pre_ci:
     - printenv
-    - ls -al /tmp/ssh*
+    - cat /tmp/ssh/00_sub
+    - cat /tmp/ssh/01_deploy
+    - ls -al /root/src/
 
   # http://docs.shippable.com/ci/shippableyml/#ci
   ci:
