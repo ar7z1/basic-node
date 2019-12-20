@@ -21,7 +21,7 @@ build:
     - printenv
     - cat /tmp/ssh/00_sub
     - cat /tmp/ssh/01_deploy
-    - ls -al /root/src/
+    - ls -al /root/src/github.com/
 
   # http://docs.shippable.com/ci/shippableyml/#ci
   ci:
